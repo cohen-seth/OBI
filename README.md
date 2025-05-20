@@ -31,7 +31,7 @@ NASA/GMAO. Tools for working with  data files in both BUFR and IODA (JEDI) forma
 $ git clone https://github.com/cohen-seth/gmao-utils.git
 ```
 
-2. Next, open and edit config_gmao_utils.sh *ONLY!* :
+2. Next, open and edit config file:
 ```sh
 $ cd gmao-utils
 $ vim config_gmao_utils.sh
@@ -41,9 +41,9 @@ $ vim config_gmao_utils.sh
 
 # Function examples
 
-convert_bufr2ioda.py
+bufr2ioda_offline_driver.py
 ```sh
-$ python src/gpsro_utils/convert_bufr2ioda.py [PATH TO BUFR FILE(S)] [PATH OF IODA FILE(S)] [PATH OF YAML TEMPLATE]
+$ python3 OBI/Demo/bufr2ioda_offline_driver.py [PATH TO BUFR FILE(S)] [PATH OF IODA FILE(S)] [PATH OF YAML TEMPLATE]
 ```
 
 5. *OPTIONAL* Then, you may want to inspect and verify LoadJedi.sh. You should NOT need to edit this file; HOWEVER, you may need to in the future if there is a more recent build of JEDI/IODA. The everything in this file must point to a current build of the JEDI IODA CONVERTERS.
