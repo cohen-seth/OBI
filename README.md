@@ -33,8 +33,8 @@ $ git clone https://github.com/cohen-seth/gmao-utils.git
 
 2. Next, open and edit config file:
 ```sh
-$ cd gmao-utils
-$ vim config_gmao_utils.sh
+$
+$
 ```
 2. Load Jedi
 3. Demo
