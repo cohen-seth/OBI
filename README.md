@@ -46,10 +46,13 @@ $ git clone https://github.com/cohen-seth/gmao-utils.git
 $
 $
 ```
+1. Make a new working directory
 2. Load Jedi - either directly or through Swell
-3. Find your /build/bin/bufr2ioda.x 
-4. Add `bufr2ioda.x` to PATH
-5. You will need to copy the data files you want to convert into the Demo/data/ directory
+3. Find your `jedi_bundle/build` directory
+4. Add `jedi_bundle/build/bin/bufr2ioda.x` to your PATH
+5. Copy the corresponding yaml files for the observation type that you want to convert from `jedi_bundle/build/iodaconv/test/testinput` into your working directory
+6. Within the yaml file you copied in step 5, you will need to change the `obsdatain` path to the path to the bufr file you want to conver and `obsdataout` to the desired path and name of the resulting ioda file.
+7. To run the conversion run `bufr2ioda.x [yaml file you just made]`
 
 # Function examples
 
